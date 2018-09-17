@@ -1,10 +1,15 @@
-﻿using Infrastructure.Data;
+﻿using Core.Interfaces;
+using Infrastructure.Data;
+using Infrastructure.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Serilog;
+using System.IO;
 
 namespace KedaiRuncitWeb
 {
@@ -23,11 +28,15 @@ namespace KedaiRuncitWeb
         {
             services.AddDbContext<RuncitContext>(options => options.UseSqlServer(_configuration.GetConnectionString("RuncitConnection")));
 
+            services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
+
+            services.AddAntiforgery();
+
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -40,7 +49,15 @@ namespace KedaiRuncitWeb
 
             app.UseStaticFiles();
 
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "RuncitWeb-{Date}.txt"))
+                .CreateLogger();
+
+            loggerFactory.AddSerilog();
+
             app.UseMvc(ConfigureRoutes);
+
         }
 
         private void ConfigureRoutes(IRouteBuilder routeBuilder)

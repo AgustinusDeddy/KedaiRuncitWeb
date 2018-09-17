@@ -9,7 +9,7 @@ namespace Core.Entities.PurchaseAggregate
         {           
         }
 
-        public DateTimeOffset PurchasedDate { get; set; }
+        public DateTimeOffset PurchasedTime { get; set; }
         public ICollection<PurchaseItem> PurchaseItems { get; set; }
     }
 }

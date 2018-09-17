@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\SellAggregate\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
