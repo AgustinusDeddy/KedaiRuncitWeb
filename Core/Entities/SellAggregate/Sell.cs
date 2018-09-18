@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Core.Entities.PurchaseAggregate;
+using System.Linq;
 
 namespace Core.Entities.SellAggregate
 {
@@ -11,6 +11,12 @@ namespace Core.Entities.SellAggregate
         }
 
         public DateTimeOffset SoldTime { get; set; }
-        public ICollection<SellItem> SellItems { get; set; }
+        public decimal TotalAmount => CalculateTotal();
+        public ICollection<SoldItem> SoldItems { get; set; }
+
+        private decimal CalculateTotal()
+        {
+            return SoldItems.Sum(i => i.Price * i.Quantity);
+        }
     }
 }
