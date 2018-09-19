@@ -1,0 +1,20 @@
+﻿body {
+	padding-top: 65px;
+}
+
+main {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+nav {
+	color: white;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
