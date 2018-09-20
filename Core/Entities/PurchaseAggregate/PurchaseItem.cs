@@ -1,9 +1,15 @@
-﻿namespace Core.Entities.PurchaseAggregate
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace Core.Entities.PurchaseAggregate
 {
     public class PurchaseItem : BaseEntity
     {
+        [Required]
         public int ItemId { get; private set; }
+        [Range(0.0, Double.MaxValue, ErrorMessage = "Price must be positive number")]
         public decimal Price { get; private set; }
+        [Range(1, int.MaxValue, ErrorMessage = "Only positive number allowed")]
         public int Quantity { get; private set; }     
 
         public Item Item { get; private set; }

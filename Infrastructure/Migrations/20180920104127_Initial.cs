@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Infrastructure.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,8 +14,8 @@ namespace Infrastructure.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true)
+                    Name = table.Column<string>(maxLength: 50, nullable: false),
+                    Description = table.Column<string>(maxLength: 200, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -69,6 +69,26 @@ namespace Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "SellItems",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    ItemId = table.Column<int>(nullable: false),
+                    Price = table.Column<decimal>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SellItems", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_SellItems_Items_ItemId",
+                        column: x => x.ItemId,
+                        principalTable: "Items",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "PurchaseItems",
                 columns: table => new
                 {
@@ -97,7 +117,7 @@ namespace Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "SellItems",
+                name: "SoldItem",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -109,15 +129,15 @@ namespace Infrastructure.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SellItems", x => x.Id);
+                    table.PrimaryKey("PK_SoldItem", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_SellItems_Items_ItemId",
+                        name: "FK_SoldItem_Items_ItemId",
                         column: x => x.ItemId,
                         principalTable: "Items",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_SellItems_Sells_SellId",
+                        name: "FK_SoldItem_Sells_SellId",
                         column: x => x.SellId,
                         principalTable: "Sells",
                         principalColumn: "Id",
@@ -145,8 +165,13 @@ namespace Infrastructure.Migrations
                 column: "ItemId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SellItems_SellId",
-                table: "SellItems",
+                name: "IX_SoldItem_ItemId",
+                table: "SoldItem",
+                column: "ItemId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SoldItem_SellId",
+                table: "SoldItem",
                 column: "SellId");
         }
 
@@ -160,6 +185,9 @@ namespace Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "SellItems");
+
+            migrationBuilder.DropTable(
+                name: "SoldItem");
 
             migrationBuilder.DropTable(
                 name: "Purchases");
