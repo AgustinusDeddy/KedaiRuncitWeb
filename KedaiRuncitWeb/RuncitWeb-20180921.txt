@@ -1,0 +1,87 @@
+2018-09-21 05:10:59.665 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:10:59.878 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:10:59.953 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:11:00.454 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-21 05:11:14.089 +08:00 [Information] Executed DbCommand ("550"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-21 05:11:15.233 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-21 05:11:15.233 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-21 05:11:15.395 +08:00 [Information] Request finished in 208.9419ms 200 
+2018-09-21 05:11:16.164 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-21 05:11:37.796 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-21 05:11:49.000 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:11:49.043 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:11:49.044 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:11:49.183 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-21 05:11:55.039 +08:00 [Information] Executed DbCommand ("436"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-21 05:11:55.682 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/robots.txt  
+2018-09-21 05:11:55.953 +08:00 [Information] Request finished in 286.1578ms 404 
+2018-09-21 05:16:42.933 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:16:43.299 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:16:43.354 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:16:43.683 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-21 05:16:53.755 +08:00 [Information] Executed DbCommand ("529"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-21 05:16:54.673 +08:00 [Warning] Unable to bind to "http://localhost:1716" on the "IPv4 loopback" interface: '"Error -4092 EACCES permission denied"'.
+2018-09-21 05:16:54.782 +08:00 [Warning] Unable to bind to "http://localhost:1716" on the "IPv6 loopback" interface: '"Error -4092 EACCES permission denied"'.
+2018-09-21 05:16:55.244 +08:00 [Fatal] Unable to start Kestrel.
+System.IO.IOException: Failed to bind to address http://localhost:1716. ---> System.AggregateException: One or more errors occurred. (Error -4092 EACCES permission denied) (Error -4092 EACCES permission denied) ---> Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvException: Error -4092 EACCES permission denied
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.LibuvFunctions.ThrowError(Int32 statusCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Networking.UvTcpHandle.Bind(IPEndPoint endPoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.ListenTcp(Boolean useFileHandle)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.Listener.<>c.<StartAsync>b__8_0(Listener listener)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.LibuvThread.DoPostWork()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.Internal.ListenerPrimary.StartAsync(String pipeName, Byte[] pipeMessage, IEndPointInformation endPointInformation, LibuvThread thread)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.LibuvTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass23_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindLocalhostAsync(ServerAddress address, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindLocalhostAsync(ServerAddress address, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAddressAsync(String address, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, List`1 listenOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2018-09-21 05:17:25.109 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:17:25.154 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:17:25.154 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:17:25.320 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-21 05:18:09.950 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:18:10.096 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:18:10.102 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-21 05:18:10.740 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-21 05:18:19.710 +08:00 [Information] Executed DbCommand ("177"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-21 05:18:20.495 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-21 05:18:20.495 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-21 05:18:20.811 +08:00 [Information] Request finished in 271.1901ms 200 
+2018-09-21 05:18:21.564 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-21 05:20:14.220 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-21 05:20:14.814 +08:00 [Information] Executed DbCommand ("251"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
