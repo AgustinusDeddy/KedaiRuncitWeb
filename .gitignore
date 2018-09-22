@@ -262,3 +262,5 @@ paket-files/
 __pycache__/
 *.pyc
 /Core/Interfaces
+/KedaiRuncitWeb/wwwroot/dist/css
+/KedaiRuncitWeb/wwwroot/vendor
