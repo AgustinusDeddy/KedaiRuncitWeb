@@ -63,7 +63,7 @@ namespace KedaiRuncitWeb
 
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
-                .WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "RuncitWeb-{Date}.txt"))
+                .WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "logs/RuncitWeb-{Date}.txt"))
                 .CreateLogger();
 
             loggerFactory.AddSerilog();
