@@ -10,6 +10,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using System.IO;
+using AutoMapper;
+using Infrastructure.Data.Repositories;
+using KedaiRuncitWeb.Interfaces;
+using KedaiRuncitWeb.Services;
 
 namespace KedaiRuncitWeb
 {
@@ -29,6 +33,14 @@ namespace KedaiRuncitWeb
             services.AddDbContext<RuncitContext>(options => options.UseSqlServer(_configuration.GetConnectionString("RuncitConnection")));
 
             services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
+
+            services.AddAutoMapper();
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+            services.AddScoped<IItemRepository, ItemRepository>();
+
+            services.AddScoped<IItemViewModelService, ItemViewModelService>();
 
             services.AddAntiforgery();
 

@@ -1,13 +1,61 @@
-﻿
+﻿@model IEnumerable<KedaiRuncitWeb.ViewModels.ItemViewModel>
+
 @{
-    ViewData["Title"] = "Home";
+	ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
 	<h2>Kedai Runcit Zaman Now</h2>
-	<h6>This simple web project is for me to learn .Net core and other technologies/tools</h6>
+	<h5>This project is about a simple inventory simple.</h5>
+	<h6>This simple project is for me to learn .Net core and other technologies/tools</h6>
 </div>
 
-<div>
 
+<div class="container">
+	
+	<div class="col-lg-12">
+		<div class="row">
+			<div class="col .no-padding-right">
+				<h5 class="float-left">List of Items</h5>
+			</div>
+			<div class="col .no-padding-left">
+				<a role="button" class="btn btn-outline-success float-right" asp-controller="Item" asp-action="Create">Create Item</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-lg-12">
+		<div class="row justify-content-center">
+
+			<table class="col-lg-8 table text-center">
+				<tr>
+					<th>
+						@Html.DisplayNameFor(model => model.Name)
+					</th>
+					<th>
+						@Html.DisplayNameFor(model => model.Stock)
+					</th>
+					<th></th>
+				</tr>
+
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>
+							@Html.DisplayFor(modelItem => item.Name)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Stock)
+						</td>
+						<td>
+							<a role="button" class="btn btn-primary" asp-controller="Item" asp-action="Edit" asp-route-id="@item.Id"><i class="fa fa-pencil"></i> Edit</a>
+							<a role="button" class="btn btn-info" asp-controller="Item" asp-action="Detail" asp-route-id="@item.Id"><i class="fa fa-search"></i> Detail</a>
+							<a role="button" class="btn btn-danger" asp-controller="Item" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-times-circle"></i> Delete</a>
+						</td>
+					</tr>
+				}
+
+			</table>
+		</div>
+	</div>
 </div>

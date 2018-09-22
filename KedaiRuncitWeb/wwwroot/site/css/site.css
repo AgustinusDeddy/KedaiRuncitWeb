@@ -18,3 +18,19 @@ footer {
 	width: 100%;
 	text-align: center;
 }
+
+div {
+	margin-top: 10px;
+}
+
+table {
+	margin-top: 8px;
+}
+
+.no-padding-right {
+	padding-right: 0px;
+}
+
+.no-padding-left {
+	padding-left: 0px;
+}

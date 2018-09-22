@@ -1,0 +1,1227 @@
+2018-09-22 09:56:02.293 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 09:56:02.355 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 09:56:02.358 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 09:56:03.076 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 09:56:29.188 +08:00 [Information] Executed DbCommand ("2,314"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-22 09:56:30.423 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/robots.txt  
+2018-09-22 09:56:30.423 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/robots.txt  
+2018-09-22 09:56:30.423 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 09:56:30.423 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-22 09:56:30.423 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 09:56:30.593 +08:00 [Information] Request finished in 209.0468ms 200 
+2018-09-22 09:56:31.099 +08:00 [Information] Request finished in 712.6557ms 404 
+2018-09-22 09:56:31.100 +08:00 [Information] Request finished in 698.702ms 404 
+2018-09-22 09:56:31.377 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 09:56:31.377 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 09:56:39.707 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 09:56:39.708 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 09:56:40.346 +08:00 [Information] Executed DbCommand ("112"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 09:56:40.352 +08:00 [Information] Executed DbCommand ("132"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 09:56:48.754 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 09:56:48.756 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 09:56:50.765 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 19572.9566ms
+2018-09-22 09:56:50.765 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 19572.1811ms
+2018-09-22 09:56:50.778 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 09:56:50.780 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 09:56:50.876 +08:00 [Information] Request finished in 20406.4465ms 200 text/html; charset=utf-8
+2018-09-22 09:56:50.892 +08:00 [Information] Request finished in 20406.4465ms 200 text/html; charset=utf-8
+2018-09-22 09:56:50.897 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 09:56:50.904 +08:00 [Information] Sending file. Request path: '"/dist/css/site.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\dist\css\site.min.css"'
+2018-09-22 09:56:50.913 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.css"'
+2018-09-22 09:56:50.924 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 09:56:50.957 +08:00 [Information] Sending file. Request path: '"/vendor/jquery/jquery.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\jquery\jquery.js"'
+2018-09-22 09:56:50.960 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.js"'
+2018-09-22 09:56:50.998 +08:00 [Information] Request finished in 224.0349ms 200 text/css
+2018-09-22 09:56:51.061 +08:00 [Information] Request finished in 119.8096ms 200 application/javascript
+2018-09-22 09:56:51.077 +08:00 [Information] Request finished in 290.8136ms 200 application/javascript
+2018-09-22 09:56:51.089 +08:00 [Information] Request finished in 174.5054ms 200 text/css
+2018-09-22 09:56:52.545 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/favicon.ico  
+2018-09-22 09:56:52.628 +08:00 [Information] Request finished in 8.1346ms 404 
+2018-09-22 10:05:26.811 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 10:05:26.839 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 10:05:26.878 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 10:05:26.880 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 10:05:26.921 +08:00 [Information] Request finished in 81.2778ms 304 text/css
+2018-09-22 10:05:26.924 +08:00 [Information] Request finished in 81.0255ms 304 text/css
+2018-09-22 10:05:26.988 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 10:05:27.088 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.js.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.js.map"'
+2018-09-22 10:05:27.144 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 10:05:27.172 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.css.map"'
+2018-09-22 10:05:27.298 +08:00 [Information] Request finished in 311.9428ms 200 text/plain
+2018-09-22 10:05:27.322 +08:00 [Information] Request finished in 195.3953ms 200 text/plain
+2018-09-22 10:07:48.591 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 10:07:49.231 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 10:07:52.512 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 10:08:04.103 +08:00 [Information] Executed DbCommand ("219"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 10:08:04.110 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 10:08:04.577 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 15962.1861ms
+2018-09-22 10:08:04.689 +08:00 [Information] Request finished in 16027.1623ms 200 text/html; charset=utf-8
+2018-09-22 10:08:04.967 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 10:08:04.988 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 10:08:05.042 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 10:08:05.047 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 10:08:05.113 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 10:08:05.170 +08:00 [Information] Request finished in 160.0583ms 304 text/css
+2018-09-22 10:08:05.173 +08:00 [Information] Request finished in 95.9243ms 304 application/javascript
+2018-09-22 10:08:05.178 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 10:08:05.180 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 10:08:05.205 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 10:08:05.222 +08:00 [Information] Request finished in 318.5609ms 304 application/javascript
+2018-09-22 10:08:05.231 +08:00 [Information] Request finished in 252.3787ms 304 text/css
+2018-09-22 10:08:05.383 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 10:08:05.406 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 10:08:05.717 +08:00 [Information] Request finished in 27.6687ms 304 text/plain
+2018-09-22 10:08:05.894 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 10:08:05.910 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 10:08:06.103 +08:00 [Information] Request finished in 439.1912ms 304 text/plain
+2018-09-22 10:08:28.012 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 10:08:28.057 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 10:08:29.565 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 10:08:29.610 +08:00 [Information] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 10:08:29.613 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 10:08:29.617 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 1601.4349ms
+2018-09-22 10:08:29.676 +08:00 [Information] Request finished in 1613.9321ms 200 text/html; charset=utf-8
+2018-09-22 10:27:42.784 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 10:27:42.788 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/robots.txt  
+2018-09-22 10:27:42.820 +08:00 [Information] Request finished in 31.7844ms 404 
+2018-09-22 10:27:42.841 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 10:28:01.643 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 10:28:09.799 +08:00 [Information] Executed DbCommand ("182"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 10:28:09.810 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 10:28:11.426 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 28632.7599ms
+2018-09-22 10:28:11.439 +08:00 [Information] Request finished in 28653.2513ms 200 text/html; charset=utf-8
+2018-09-22 10:28:11.730 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 10:28:11.753 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 10:28:11.780 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 10:28:11.840 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 10:28:11.890 +08:00 [Information] Request finished in 65.1455ms 304 text/css
+2018-09-22 10:28:11.893 +08:00 [Information] Request finished in 124.8171ms 304 text/css
+2018-09-22 10:28:12.748 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 10:28:12.752 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 10:28:12.765 +08:00 [Information] Request finished in 16.2111ms 304 application/javascript
+2018-09-22 10:28:12.817 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 10:28:12.822 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 10:28:12.839 +08:00 [Information] Request finished in 8.2663ms 304 application/javascript
+2018-09-22 10:28:12.987 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 10:28:13.000 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 10:28:13.053 +08:00 [Information] Request finished in 19.5465ms 304 text/plain
+2018-09-22 10:28:15.026 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 10:28:15.029 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 10:28:15.070 +08:00 [Information] Request finished in 9.7124ms 304 text/plain
+2018-09-22 11:28:41.158 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 11:28:41.255 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 11:28:41.260 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 11:28:41.592 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:29:00.324 +08:00 [Information] Executed DbCommand ("278"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-22 11:29:01.938 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:29:01.938 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-22 11:29:02.580 +08:00 [Information] Request finished in 577.8462ms 200 
+2018-09-22 11:29:04.000 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:31:51.850 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:31:52.050 +08:00 [Information] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:32:02.306 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 178663.5192ms
+2018-09-22 11:32:03.229 +08:00 [Error] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(27,53): error CS1061: 'ItemViewModel' does not contain a definition for 'Age' and no extension method 'Age' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(30,53): error CS1061: 'ItemViewModel' does not contain a definition for 'Active' and no extension method 'Active' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(33,53): error CS1061: 'ItemViewModel' does not contain a definition for 'FileName' and no extension method 'FileName' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(41,56): error CS1061: 'ItemViewModel' does not contain a definition for 'FirstName' and no extension method 'FirstName' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(44,56): error CS1061: 'ItemViewModel' does not contain a definition for 'LastName' and no extension method 'LastName' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(47,56): error CS1061: 'ItemViewModel' does not contain a definition for 'Age' and no extension method 'Age' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(50,56): error CS1061: 'ItemViewModel' does not contain a definition for 'Active' and no extension method 'Active' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(53,56): error CS1061: 'ItemViewModel' does not contain a definition for 'FileName' and no extension method 'FileName' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(56,68): error CS1061: 'ItemViewModel' does not contain a definition for 'AutoId' and no extension method 'AutoId' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(57,74): error CS1061: 'ItemViewModel' does not contain a definition for 'AutoId' and no extension method 'AutoId' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(58,72): error CS1061: 'ItemViewModel' does not contain a definition for 'AutoId' and no extension method 'AutoId' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-09-22 11:32:03.449 +08:00 [Information] Request finished in 181588.6831ms 500 text/html; charset=utf-8
+2018-09-22 11:34:19.126 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:34:19.174 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:34:23.871 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:34:23.921 +08:00 [Information] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:34:24.126 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 4994.3563ms
+2018-09-22 11:34:24.135 +08:00 [Error] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(38,56): error CS1061: 'ItemViewModel' does not contain a definition for 'Age' and no extension method 'Age' accepting a first argument of type 'ItemViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-09-22 11:34:24.146 +08:00 [Information] Request finished in 5012.8604ms 500 text/html; charset=utf-8
+2018-09-22 11:34:38.053 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:34:38.079 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:34:40.962 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:34:41.034 +08:00 [Information] Executed DbCommand ("59"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:34:43.017 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:34:44.308 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 6238.2372ms
+2018-09-22 11:34:44.532 +08:00 [Information] Request finished in 6297.7563ms 200 text/html; charset=utf-8
+2018-09-22 11:34:44.561 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 11:34:44.577 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:34:44.592 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:34:44.595 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:34:44.638 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.css"'
+2018-09-22 11:34:44.654 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.js"'
+2018-09-22 11:34:44.659 +08:00 [Information] Sending file. Request path: '"/dist/css/site.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\dist\css\site.min.css"'
+2018-09-22 11:34:44.752 +08:00 [Information] Sending file. Request path: '"/vendor/jquery/jquery.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\jquery\jquery.js"'
+2018-09-22 11:34:44.917 +08:00 [Information] Request finished in 352.2927ms 200 text/css
+2018-09-22 11:34:44.941 +08:00 [Information] Request finished in 386.4282ms 200 application/javascript
+2018-09-22 11:34:44.987 +08:00 [Information] Request finished in 391.8596ms 200 text/css
+2018-09-22 11:34:45.057 +08:00 [Information] Request finished in 499.4902ms 200 application/javascript
+2018-09-22 11:35:36.311 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:35:36.341 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:35:37.822 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:35:37.863 +08:00 [Information] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:35:38.210 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:35:38.236 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 1915.8073ms
+2018-09-22 11:35:38.488 +08:00 [Information] Request finished in 1927.1269ms 200 text/html; charset=utf-8
+2018-09-22 11:35:38.495 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:35:38.507 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:35:38.510 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 11:35:38.514 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:35:38.518 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 11:35:38.525 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 11:35:38.530 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 11:35:38.532 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 11:35:38.575 +08:00 [Information] Request finished in 46.5426ms 304 application/javascript
+2018-09-22 11:35:38.718 +08:00 [Information] Request finished in 46.6599ms 304 text/css
+2018-09-22 11:35:38.799 +08:00 [Information] Request finished in 56.0127ms 304 text/css
+2018-09-22 11:35:38.952 +08:00 [Information] Request finished in 109.513ms 304 application/javascript
+2018-09-22 11:36:14.858 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:36:14.882 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:36:18.377 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:36:18.407 +08:00 [Information] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:36:18.644 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:36:18.691 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 3810.0767ms
+2018-09-22 11:36:18.841 +08:00 [Information] Request finished in 3839.8837ms 200 text/html; charset=utf-8
+2018-09-22 11:37:38.762 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:37:38.791 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:37:38.793 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:37:38.829 +08:00 [Information] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:37:39.090 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:37:39.114 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 347.2007ms
+2018-09-22 11:37:39.180 +08:00 [Information] Request finished in 355.9375ms 200 text/html; charset=utf-8
+2018-09-22 11:37:39.281 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:37:39.286 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:37:39.303 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:37:39.311 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 11:37:39.439 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 11:37:39.506 +08:00 [Information] Request finished in 46.4505ms 304 application/javascript
+2018-09-22 11:37:39.523 +08:00 [Information] Request finished in 174.5218ms 304 text/css
+2018-09-22 11:37:39.613 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 11:37:39.637 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 11:37:39.685 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 11:37:39.706 +08:00 [Information] Request finished in 382.4784ms 304 application/javascript
+2018-09-22 11:37:39.732 +08:00 [Information] Request finished in 420.3946ms 304 text/css
+2018-09-22 11:39:11.896 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:39:11.925 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:39:11.933 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:39:11.972 +08:00 [Information] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:39:12.235 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:39:12.399 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 369.8809ms
+2018-09-22 11:39:12.482 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:39:12.529 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 11:39:12.564 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:39:12.576 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 11:39:12.586 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 11:39:12.614 +08:00 [Information] Request finished in 167.4602ms 304 text/css
+2018-09-22 11:39:12.622 +08:00 [Information] Request finished in 105.4827ms 304 text/css
+2018-09-22 11:39:12.628 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:39:12.632 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 11:39:12.685 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 11:39:12.703 +08:00 [Information] Request finished in 248.9939ms 304 application/javascript
+2018-09-22 11:39:12.712 +08:00 [Information] Request finished in 71.8539ms 304 application/javascript
+2018-09-22 11:39:12.720 +08:00 [Information] Request finished in 524.8553ms 200 text/html; charset=utf-8
+2018-09-22 11:40:02.857 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:40:02.890 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:40:02.893 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:40:02.922 +08:00 [Information] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:40:03.170 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:40:03.217 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 322.0524ms
+2018-09-22 11:40:03.277 +08:00 [Information] Request finished in 362.9778ms 200 text/html; charset=utf-8
+2018-09-22 11:40:35.136 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 11:40:35.137 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:40:35.144 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 11:40:35.151 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 11:40:35.165 +08:00 [Information] Request finished in 18.8015ms 304 text/css
+2018-09-22 11:40:35.172 +08:00 [Information] Request finished in 27.67ms 304 text/css
+2018-09-22 11:40:35.450 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 11:40:35.690 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.js.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.js.map"'
+2018-09-22 11:40:35.754 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 11:40:35.780 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.css.map"'
+2018-09-22 11:40:36.138 +08:00 [Information] Request finished in 535.3028ms 200 text/plain
+2018-09-22 11:40:36.300 +08:00 [Information] Request finished in 564.7919ms 200 text/plain
+2018-09-22 11:41:15.774 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:41:15.809 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:41:15.813 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:41:15.857 +08:00 [Information] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:41:16.080 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:41:16.142 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 319.8597ms
+2018-09-22 11:41:16.244 +08:00 [Information] Request finished in 376.9269ms 200 text/html; charset=utf-8
+2018-09-22 11:41:16.249 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:41:16.263 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:41:16.266 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 11:41:16.347 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 11:41:16.392 +08:00 [Information] Request finished in 93.54ms 304 application/javascript
+2018-09-22 11:41:16.405 +08:00 [Information] Request finished in 102.9008ms 304 application/javascript
+2018-09-22 11:45:19.770 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:45:19.796 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/robots.txt  
+2018-09-22 11:45:19.893 +08:00 [Information] Request finished in 29.5482ms 404 
+2018-09-22 11:45:19.913 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:45:19.927 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:45:20.277 +08:00 [Information] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:45:20.440 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:45:20.517 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 691.8255ms
+2018-09-22 11:45:20.694 +08:00 [Information] Request finished in 754.9801ms 200 text/html; charset=utf-8
+2018-09-22 11:45:20.707 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:45:20.813 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:45:20.821 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 11:45:20.827 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 11:45:20.837 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 11:45:20.873 +08:00 [Information] Request finished in 271.8951ms 304 application/javascript
+2018-09-22 11:45:20.878 +08:00 [Information] Request finished in 146.468ms 304 text/css
+2018-09-22 11:45:20.883 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 11:45:20.934 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:45:20.950 +08:00 [Information] Request finished in 177.2516ms 304 text/css
+2018-09-22 11:45:20.952 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 11:45:20.956 +08:00 [Information] Request finished in 258.4748ms 304 application/javascript
+2018-09-22 11:45:21.079 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 11:45:21.123 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 11:45:21.360 +08:00 [Information] Request finished in 76.0386ms 304 text/plain
+2018-09-22 11:45:21.486 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 11:45:21.502 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 11:45:21.780 +08:00 [Information] Request finished in 142.0557ms 304 text/plain
+2018-09-22 11:46:28.109 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:46:28.214 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:46:28.229 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:46:28.367 +08:00 [Information] Executed DbCommand ("78"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:46:28.635 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:46:28.759 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 544.4881ms
+2018-09-22 11:46:28.998 +08:00 [Information] Request finished in 680.1845ms 200 text/html; charset=utf-8
+2018-09-22 11:46:42.666 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:46:42.700 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:46:42.702 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:46:42.739 +08:00 [Information] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:46:43.033 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:46:43.076 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 384.6013ms
+2018-09-22 11:46:43.123 +08:00 [Information] Request finished in 420.3487ms 200 text/html; charset=utf-8
+2018-09-22 11:47:02.594 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:47:02.639 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:47:02.647 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:47:02.701 +08:00 [Information] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:47:02.936 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:47:02.955 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 356.0936ms
+2018-09-22 11:47:03.261 +08:00 [Information] Request finished in 370.7501ms 200 text/html; charset=utf-8
+2018-09-22 11:47:20.762 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:47:20.895 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:47:20.900 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:47:20.953 +08:00 [Information] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:47:21.305 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:47:21.342 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 564.0698ms
+2018-09-22 11:47:21.451 +08:00 [Information] Request finished in 629.0371ms 200 text/html; charset=utf-8
+2018-09-22 11:47:21.648 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 11:47:21.657 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:47:21.668 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:47:21.683 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 11:47:21.761 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 11:47:21.791 +08:00 [Information] Request finished in 232.3206ms 304 text/css
+2018-09-22 11:47:21.794 +08:00 [Information] Request finished in 112.5867ms 304 text/css
+2018-09-22 11:47:21.806 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:47:21.813 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 11:47:21.849 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 11:47:21.941 +08:00 [Information] Request finished in 169.545ms 304 application/javascript
+2018-09-22 11:47:22.012 +08:00 [Information] Request finished in 206.1473ms 304 application/javascript
+2018-09-22 11:47:22.027 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 11:47:22.048 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 11:47:22.453 +08:00 [Information] Request finished in 36.5732ms 304 text/plain
+2018-09-22 11:47:22.509 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 11:47:22.522 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 11:47:22.556 +08:00 [Information] Request finished in 69.602ms 304 text/plain
+2018-09-22 11:47:49.946 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:47:49.977 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:47:49.980 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:47:50.013 +08:00 [Information] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:47:50.309 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:47:50.328 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 377.9106ms
+2018-09-22 11:47:50.429 +08:00 [Information] Request finished in 389.0159ms 200 text/html; charset=utf-8
+2018-09-22 11:48:15.300 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:48:15.375 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:48:15.381 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:48:15.587 +08:00 [Information] Executed DbCommand ("194"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:48:15.875 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:48:16.003 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 594.9757ms
+2018-09-22 11:48:16.065 +08:00 [Information] Request finished in 706.024ms 200 text/html; charset=utf-8
+2018-09-22 11:49:00.320 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:49:00.362 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:49:00.368 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:49:00.408 +08:00 [Information] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:49:00.413 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:49:00.423 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 97.389ms
+2018-09-22 11:49:00.523 +08:00 [Information] Request finished in 123.8414ms 200 text/html; charset=utf-8
+2018-09-22 11:49:16.282 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:49:16.321 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:49:16.325 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:49:16.359 +08:00 [Information] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:49:16.624 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:49:16.656 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 361.3169ms
+2018-09-22 11:49:16.711 +08:00 [Information] Request finished in 404.1916ms 200 text/html; charset=utf-8
+2018-09-22 11:49:57.197 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:49:57.223 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:49:57.228 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:49:57.272 +08:00 [Information] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:49:57.499 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:49:57.520 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 318.1599ms
+2018-09-22 11:49:57.586 +08:00 [Information] Request finished in 328.1711ms 200 text/html; charset=utf-8
+2018-09-22 11:49:57.639 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:49:57.702 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:49:57.709 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:49:57.745 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 11:49:57.774 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 11:49:57.790 +08:00 [Information] Request finished in 112.8902ms 304 text/css
+2018-09-22 11:49:57.794 +08:00 [Information] Request finished in 140.1242ms 304 application/javascript
+2018-09-22 11:49:57.798 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 11:49:57.806 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 11:49:57.819 +08:00 [Information] Request finished in 171.806ms 304 application/javascript
+2018-09-22 11:49:57.837 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 11:49:57.926 +08:00 [Information] Request finished in 135.9919ms 304 text/css
+2018-09-22 11:49:58.070 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 11:49:58.073 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 11:49:58.077 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 11:49:58.081 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 11:49:58.369 +08:00 [Information] Request finished in 20.4426ms 304 text/plain
+2018-09-22 11:49:58.425 +08:00 [Information] Request finished in 16.2091ms 304 text/plain
+2018-09-22 11:50:32.017 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:50:32.051 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:50:32.054 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:50:32.113 +08:00 [Information] Executed DbCommand ("51"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:50:32.387 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:50:32.423 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 402.8253ms
+2018-09-22 11:50:32.439 +08:00 [Information] Request finished in 412.9925ms 200 text/html; charset=utf-8
+2018-09-22 11:52:03.128 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:52:03.166 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:52:03.171 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:52:03.295 +08:00 [Information] Executed DbCommand ("120"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:52:03.565 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:52:03.700 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 453.1656ms
+2018-09-22 11:52:03.981 +08:00 [Information] Request finished in 575.5169ms 200 text/html; charset=utf-8
+2018-09-22 11:52:54.326 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:52:54.424 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:52:54.430 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:52:54.527 +08:00 [Information] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:52:54.862 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:52:54.891 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 558.6964ms
+2018-09-22 11:52:54.968 +08:00 [Information] Request finished in 577.1206ms 200 text/html; charset=utf-8
+2018-09-22 11:52:55.081 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=3vFDVlHqOk2hAnXvLDFY1bvjML8LfEnIrg5VW25r2hs  
+2018-09-22 11:52:55.088 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:52:55.093 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:52:55.099 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 11:52:55.114 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 11:52:55.123 +08:00 [Information] Request finished in 53.5201ms 304 text/css
+2018-09-22 11:52:55.128 +08:00 [Information] Request finished in 68.5657ms 304 application/javascript
+2018-09-22 11:52:55.132 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:52:55.134 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 11:52:55.144 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 11:52:55.146 +08:00 [Information] Request finished in 102.0733ms 304 text/css
+2018-09-22 11:52:55.154 +08:00 [Information] Request finished in 98.2082ms 304 application/javascript
+2018-09-22 11:52:55.434 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 11:52:55.440 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 11:52:55.446 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 11:52:55.466 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 11:52:55.604 +08:00 [Information] Request finished in 26.507ms 304 text/plain
+2018-09-22 11:52:55.613 +08:00 [Information] Request finished in 36.5452ms 304 text/plain
+2018-09-22 11:53:18.514 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:53:18.540 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:53:18.542 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:53:18.572 +08:00 [Information] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:53:18.940 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:53:18.980 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 446.0635ms
+2018-09-22 11:53:19.315 +08:00 [Information] Request finished in 469.2218ms 200 text/html; charset=utf-8
+2018-09-22 11:53:36.822 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:53:36.861 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:53:36.868 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:53:36.927 +08:00 [Information] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:53:37.212 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:53:37.234 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 405.4479ms
+2018-09-22 11:53:37.277 +08:00 [Information] Request finished in 419.717ms 200 text/html; charset=utf-8
+2018-09-22 11:54:41.890 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:54:41.894 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/robots.txt  
+2018-09-22 11:54:41.961 +08:00 [Information] Request finished in 48.8374ms 404 
+2018-09-22 11:54:41.963 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:54:41.968 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:54:42.027 +08:00 [Information] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:54:42.479 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:54:42.633 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 613.693ms
+2018-09-22 11:54:42.764 +08:00 [Information] Request finished in 787.8928ms 200 text/html; charset=utf-8
+2018-09-22 11:56:27.058 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 11:56:27.128 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 11:56:27.132 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 11:56:27.438 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:56:36.145 +08:00 [Information] Executed DbCommand ("281"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-22 11:56:38.410 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-22 11:56:38.369 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 11:56:38.892 +08:00 [Information] Request finished in 618.2614ms 200 
+2018-09-22 11:56:42.316 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 11:56:42.371 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 11:56:43.113 +08:00 [Information] Executed DbCommand ("151"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 11:56:58.421 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 11:57:00.868 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 18933.3612ms
+2018-09-22 11:57:01.121 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=gbEdT56ENj28hHRshmJwaxDHjJLKkPd3wOmZf8SVhgk  
+2018-09-22 11:57:01.160 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:57:01.172 +08:00 [Information] Request finished in 22905.3421ms 200 text/html; charset=utf-8
+2018-09-22 11:57:01.176 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 11:57:01.195 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 11:57:01.204 +08:00 [Information] Sending file. Request path: '"/dist/css/site.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\dist\css\site.min.css"'
+2018-09-22 11:57:01.224 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.js"'
+2018-09-22 11:57:01.235 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.css"'
+2018-09-22 11:57:01.242 +08:00 [Information] Sending file. Request path: '"/vendor/jquery/jquery.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\jquery\jquery.js"'
+2018-09-22 11:57:01.309 +08:00 [Information] Request finished in 444.4532ms 200 text/css
+2018-09-22 11:57:01.502 +08:00 [Information] Request finished in 250.7ms 200 application/javascript
+2018-09-22 11:57:01.593 +08:00 [Information] Request finished in 659.7036ms 200 text/css
+2018-09-22 11:57:01.695 +08:00 [Information] Request finished in 795.7387ms 200 application/javascript
+2018-09-22 11:57:20.775 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=gbEdT56ENj28hHRshmJwaxDHjJLKkPd3wOmZf8SVhgk  
+2018-09-22 11:57:20.775 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 11:57:20.782 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 11:57:20.783 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 11:57:20.811 +08:00 [Information] Request finished in 17.6062ms 304 text/css
+2018-09-22 11:57:20.813 +08:00 [Information] Request finished in 21.0192ms 304 text/css
+2018-09-22 11:57:21.111 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 11:57:21.120 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.js.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.js.map"'
+2018-09-22 11:57:21.325 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 11:57:21.376 +08:00 [Information] Request finished in 78.1612ms 200 text/plain
+2018-09-22 11:57:21.398 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.css.map"'
+2018-09-22 11:57:21.701 +08:00 [Information] Request finished in 482.2264ms 200 text/plain
+2018-09-22 12:00:12.950 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 12:00:13.016 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 12:00:13.030 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 12:00:13.480 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:00:26.345 +08:00 [Information] Executed DbCommand ("220"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-22 12:00:27.527 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-22 12:00:27.527 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:00:28.176 +08:00 [Information] Request finished in 478.9165ms 200 
+2018-09-22 12:00:29.455 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:00:29.533 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:00:30.245 +08:00 [Information] Executed DbCommand ("257"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:00:48.425 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:00:50.365 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 12:00:50.367 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 21392.1267ms
+2018-09-22 12:00:50.377 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=ir6Qbx4KI0d24o0vGDRkjG_3zbz76I90O-Kc5fWhPQQ  
+2018-09-22 12:00:50.393 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 12:00:50.439 +08:00 [Information] Sending file. Request path: '"/dist/css/site.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\dist\css\site.min.css"'
+2018-09-22 12:00:50.655 +08:00 [Information] Sending file. Request path: '"/vendor/jquery/jquery.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\jquery\jquery.js"'
+2018-09-22 12:00:50.688 +08:00 [Information] Request finished in 22967.3164ms 200 text/html; charset=utf-8
+2018-09-22 12:00:50.690 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.css"'
+2018-09-22 12:00:50.698 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 12:00:50.701 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.js"'
+2018-09-22 12:00:50.904 +08:00 [Information] Request finished in 166.6461ms 200 application/javascript
+2018-09-22 12:00:50.934 +08:00 [Information] Request finished in 494.8136ms 200 text/css
+2018-09-22 12:00:51.014 +08:00 [Information] Request finished in 544.1286ms 200 application/javascript
+2018-09-22 12:00:51.017 +08:00 [Information] Request finished in 511.4865ms 200 text/css
+2018-09-22 12:03:17.440 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:03:17.493 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:03:17.495 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:03:17.536 +08:00 [Information] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:03:17.937 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:03:17.972 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 510.8639ms
+2018-09-22 12:03:18.172 +08:00 [Information] Request finished in 534.7505ms 200 text/html; charset=utf-8
+2018-09-22 12:03:18.260 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 12:03:18.266 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=ir6Qbx4KI0d24o0vGDRkjG_3zbz76I90O-Kc5fWhPQQ  
+2018-09-22 12:03:18.271 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 12:03:18.274 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 12:03:18.311 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 12:03:18.315 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 12:03:18.339 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 12:03:18.372 +08:00 [Information] Request finished in 56.6595ms 304 application/javascript
+2018-09-22 12:03:18.382 +08:00 [Information] Request finished in 78.817ms 304 text/css
+2018-09-22 12:03:18.421 +08:00 [Information] Request finished in 128.3212ms 304 application/javascript
+2018-09-22 12:03:18.423 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 12:03:18.470 +08:00 [Information] Request finished in 165.7067ms 304 text/css
+2018-09-22 12:03:36.674 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 12:03:36.685 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.js.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.js.map"'
+2018-09-22 12:03:36.789 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 12:03:36.941 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.css.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.css.map"'
+2018-09-22 12:03:37.089 +08:00 [Information] Request finished in 308.1048ms 200 text/plain
+2018-09-22 12:03:37.500 +08:00 [Information] Request finished in 592.6879ms 200 text/plain
+2018-09-22 12:08:52.454 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:08:52.524 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:08:52.532 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:08:53.331 +08:00 [Information] Executed DbCommand ("346"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:08:53.927 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:08:54.384 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 1495.5217ms
+2018-09-22 12:08:54.814 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 12:08:54.951 +08:00 [Information] Request finished in 1988.4869ms 200 text/html; charset=utf-8
+2018-09-22 12:08:55.009 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=ir6Qbx4KI0d24o0vGDRkjG_3zbz76I90O-Kc5fWhPQQ  
+2018-09-22 12:08:55.127 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 12:08:55.149 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 12:08:55.187 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 12:08:55.211 +08:00 [Information] Request finished in 335.197ms 304 text/css
+2018-09-22 12:08:55.225 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 12:08:55.248 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 12:08:55.278 +08:00 [Information] Request finished in 237.5872ms 304 text/css
+2018-09-22 12:08:55.306 +08:00 [Information] Request finished in 897.2565ms 304 application/javascript
+2018-09-22 12:08:55.323 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 12:08:55.345 +08:00 [Information] Request finished in 966.6934ms 304 application/javascript
+2018-09-22 12:08:55.546 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 12:08:55.587 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 12:08:55.596 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 12:08:55.980 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 12:08:56.059 +08:00 [Information] Request finished in 63.9294ms 304 text/plain
+2018-09-22 12:08:56.127 +08:00 [Information] Request finished in 441.0929ms 304 text/plain
+2018-09-22 12:15:05.309 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:15:05.347 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:15:05.361 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:15:05.418 +08:00 [Information] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:15:05.995 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:15:06.033 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 717.3023ms
+2018-09-22 12:15:06.298 +08:00 [Information] Request finished in 737.6571ms 200 text/html; charset=utf-8
+2018-09-22 12:15:06.330 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 12:15:06.334 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 12:15:06.342 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=ir6Qbx4KI0d24o0vGDRkjG_3zbz76I90O-Kc5fWhPQQ  
+2018-09-22 12:15:06.346 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 12:15:06.360 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 12:15:06.510 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 12:15:06.558 +08:00 [Information] Request finished in 30.3319ms 304 text/css
+2018-09-22 12:15:06.563 +08:00 [Information] Request finished in 186.2734ms 304 application/javascript
+2018-09-22 12:15:06.577 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 12:15:06.642 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 12:15:06.651 +08:00 [Information] Request finished in 281.7609ms 304 text/css
+2018-09-22 12:15:06.715 +08:00 [Information] Request finished in 345.9804ms 304 application/javascript
+2018-09-22 12:15:06.797 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 12:15:06.798 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 12:15:06.812 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 12:15:06.815 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 12:15:07.009 +08:00 [Information] Request finished in 20.3869ms 304 text/plain
+2018-09-22 12:15:07.011 +08:00 [Information] Request finished in 30.6648ms 304 text/plain
+2018-09-22 12:19:13.676 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:19:13.735 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:19:13.747 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:19:14.082 +08:00 [Information] Executed DbCommand ("242"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:19:15.731 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:19:15.875 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 2104.8263ms
+2018-09-22 12:19:16.227 +08:00 [Information] Request finished in 2231.7022ms 200 text/html; charset=utf-8
+2018-09-22 12:19:16.488 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 12:19:16.492 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 12:19:16.500 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=ir6Qbx4KI0d24o0vGDRkjG_3zbz76I90O-Kc5fWhPQQ  
+2018-09-22 12:19:16.503 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 12:19:16.516 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 12:19:16.591 +08:00 [Information] Request finished in 259.3305ms 304 application/javascript
+2018-09-22 12:19:16.655 +08:00 [Information] Request finished in 28.0065ms 304 text/css
+2018-09-22 12:19:16.658 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 12:19:16.665 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 12:19:16.700 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 12:19:16.801 +08:00 [Information] Request finished in 476.8824ms 304 application/javascript
+2018-09-22 12:19:16.812 +08:00 [Information] Request finished in 510.4657ms 304 text/css
+2018-09-22 12:19:17.061 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 12:19:17.372 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 12:19:17.405 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 12:19:17.552 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 12:19:17.738 +08:00 [Information] Request finished in 435.8361ms 304 text/plain
+2018-09-22 12:19:17.748 +08:00 [Information] Request finished in 554.9015ms 304 text/plain
+2018-09-22 12:19:40.922 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:19:40.957 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:19:40.965 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:19:41.003 +08:00 [Information] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:19:41.450 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:19:41.531 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 566.6665ms
+2018-09-22 12:19:41.637 +08:00 [Information] Request finished in 624.8853ms 200 text/html; charset=utf-8
+2018-09-22 12:20:13.533 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:20:13.575 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:20:13.579 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:20:13.680 +08:00 [Information] Executed DbCommand ("80"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:20:14.358 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:20:14.396 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 858.4905ms
+2018-09-22 12:20:14.681 +08:00 [Information] Request finished in 876.3415ms 200 text/html; charset=utf-8
+2018-09-22 12:27:04.416 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:27:04.786 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:27:04.889 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:27:05.222 +08:00 [Information] Executed DbCommand ("246"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:27:05.983 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:27:06.031 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 1597.5471ms
+2018-09-22 12:27:06.204 +08:00 [Information] Request finished in 1650.8534ms 200 text/html; charset=utf-8
+2018-09-22 12:27:06.362 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js  
+2018-09-22 12:27:06.390 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.js  
+2018-09-22 12:27:06.409 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js" was not modified
+2018-09-22 12:27:06.518 +08:00 [Information] The file "/vendor/jquery/jquery.js" was not modified
+2018-09-22 12:27:06.563 +08:00 [Information] Request finished in 203.4555ms 304 application/javascript
+2018-09-22 12:27:06.568 +08:00 [Information] Request finished in 313.3294ms 304 application/javascript
+2018-09-22 12:27:06.594 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=ir6Qbx4KI0d24o0vGDRkjG_3zbz76I90O-Kc5fWhPQQ  
+2018-09-22 12:27:06.597 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css?v=SmSEXNAArTgQ8SR6kKpyP_N-jA8f8q8KpG0qQldSKos  
+2018-09-22 12:27:06.599 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 12:27:06.650 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css" was not modified
+2018-09-22 12:27:06.777 +08:00 [Information] Request finished in 243.3475ms 304 text/css
+2018-09-22 12:27:06.839 +08:00 [Information] Request finished in 241.6683ms 304 text/css
+2018-09-22 12:27:06.951 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.css.map  
+2018-09-22 12:27:06.963 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.js.map  
+2018-09-22 12:27:06.981 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.css.map" was not modified
+2018-09-22 12:27:06.989 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.js.map" was not modified
+2018-09-22 12:27:07.317 +08:00 [Information] Request finished in 48.6969ms 304 text/plain
+2018-09-22 12:27:07.327 +08:00 [Information] Request finished in 42.7943ms 304 text/plain
+2018-09-22 12:27:09.788 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:27:09.918 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:27:10.036 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:27:10.404 +08:00 [Information] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:27:10.424 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:27:10.663 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 647.1737ms
+2018-09-22 12:27:10.721 +08:00 [Information] Request finished in 879.5166ms 200 text/html; charset=utf-8
+2018-09-22 12:54:43.828 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 12:54:43.939 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 12:54:44.001 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 12:54:44.732 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:55:09.264 +08:00 [Information] Executed DbCommand ("223"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-22 12:55:16.832 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:55:17.346 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-22 12:55:18.797 +08:00 [Information] Request finished in 2283.5359ms 200 
+2018-09-22 12:55:26.898 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:55:27.118 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/robots.txt  
+2018-09-22 12:55:27.117 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:55:27.653 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:55:27.934 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:55:27.981 +08:00 [Information] Request finished in 434.7075ms 404 
+2018-09-22 12:55:28.019 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:55:28.884 +08:00 [Information] Executed DbCommand ("252"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:55:29.774 +08:00 [Information] Executed DbCommand ("937"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:55:56.158 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:55:56.158 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:55:58.064 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 31091.5337ms
+2018-09-22 12:55:58.264 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 32669.7393ms
+2018-09-22 12:55:58.550 +08:00 [Information] Request finished in 31423.7343ms 200 text/html; charset=utf-8
+2018-09-22 12:55:58.598 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 12:55:58.598 +08:00 [Information] Request finished in 42309.805ms 200 text/html; charset=utf-8
+2018-09-22 12:55:58.619 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 12:55:58.628 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 12:55:58.633 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 12:55:58.663 +08:00 [Information] Sending file. Request path: '"/dist/css/site.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\dist\css\site.min.css"'
+2018-09-22 12:55:58.681 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.min.css"'
+2018-09-22 12:55:58.696 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.min.js"'
+2018-09-22 12:55:58.698 +08:00 [Information] Sending file. Request path: '"/vendor/jquery/jquery.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\jquery\jquery.min.js"'
+2018-09-22 12:55:58.713 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/font-awesome.min.css  
+2018-09-22 12:55:58.725 +08:00 [Information] Request finished in 11.9681ms 404 
+2018-09-22 12:55:59.143 +08:00 [Information] Request finished in 702.3779ms 200 text/css
+2018-09-22 12:55:59.197 +08:00 [Information] Request finished in 600.0276ms 200 application/javascript
+2018-09-22 12:55:59.254 +08:00 [Information] Request finished in 603.5473ms 200 application/javascript
+2018-09-22 12:55:59.351 +08:00 [Information] Request finished in 993.9768ms 200 text/css
+2018-09-22 12:56:08.068 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/font-awesome.min.css  
+2018-09-22 12:56:08.150 +08:00 [Information] Request finished in 5.1417ms 404 
+2018-09-22 12:56:08.897 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js.map  
+2018-09-22 12:56:08.952 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.min.js.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.min.js.map"'
+2018-09-22 12:56:08.959 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css.map  
+2018-09-22 12:56:09.013 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.min.css.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.min.css.map"'
+2018-09-22 12:56:09.050 +08:00 [Information] Request finished in 594.8283ms 200 text/plain
+2018-09-22 12:56:09.276 +08:00 [Information] Request finished in 236.5958ms 200 text/plain
+2018-09-22 12:56:42.425 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:56:42.763 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:56:42.822 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:56:43.060 +08:00 [Information] Executed DbCommand ("86"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:56:43.066 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:56:45.657 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 3036.0814ms
+2018-09-22 12:56:46.367 +08:00 [Information] Request finished in 3285.1365ms 200 text/html; charset=utf-8
+2018-09-22 12:56:46.606 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 12:56:46.894 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 12:56:46.953 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 12:56:47.008 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.min.css" was not modified
+2018-09-22 12:56:47.008 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.min.js" was not modified
+2018-09-22 12:56:47.052 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 12:56:47.177 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 12:56:47.237 +08:00 [Information] Request finished in 693.0993ms 304 text/css
+2018-09-22 12:56:47.331 +08:00 [Information] Request finished in 655.1811ms 304 application/javascript
+2018-09-22 12:56:47.355 +08:00 [Information] Request finished in 683.1834ms 304 text/css
+2018-09-22 12:56:47.360 +08:00 [Information] The file "/vendor/jquery/jquery.min.js" was not modified
+2018-09-22 12:56:47.419 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css  
+2018-09-22 12:56:47.425 +08:00 [Information] Request finished in 536.2649ms 304 application/javascript
+2018-09-22 12:56:47.594 +08:00 [Information] Request finished in 1044.3469ms 404 
+2018-09-22 12:56:48.527 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css.map  
+2018-09-22 12:56:48.784 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js.map  
+2018-09-22 12:56:48.813 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.min.css.map" was not modified
+2018-09-22 12:56:48.983 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.min.js.map" was not modified
+2018-09-22 12:56:49.613 +08:00 [Information] Request finished in 702.7789ms 304 text/plain
+2018-09-22 12:56:49.832 +08:00 [Information] Request finished in 869.8394ms 304 text/plain
+2018-09-22 12:57:37.363 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 12:57:37.752 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 12:57:37.862 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 12:57:37.949 +08:00 [Information] Executed DbCommand ("82"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 12:57:37.970 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 12:57:38.907 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 1517.4254ms
+2018-09-22 12:57:39.097 +08:00 [Information] Request finished in 1634.5962ms 200 text/html; charset=utf-8
+2018-09-22 12:57:39.165 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 12:57:39.394 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 12:57:40.679 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 12:57:40.722 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.min.css" was not modified
+2018-09-22 12:57:40.858 +08:00 [Information] The file "/vendor/jquery/jquery.min.js" was not modified
+2018-09-22 12:57:40.863 +08:00 [Information] Request finished in 1562.0279ms 304 text/css
+2018-09-22 12:57:41.049 +08:00 [Information] Request finished in 1564.2607ms 304 application/javascript
+2018-09-22 12:57:41.080 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 12:57:41.084 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0  
+2018-09-22 12:57:41.096 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 12:57:41.102 +08:00 [Information] Sending file. Request path: '"/vendor/font-awesome/font-awesome.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\font-awesome\font-awesome.min.css"'
+2018-09-22 12:57:41.132 +08:00 [Information] Request finished in 1706.2711ms 304 text/css
+2018-09-22 12:57:41.187 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.min.js" was not modified
+2018-09-22 12:57:41.545 +08:00 [Information] Request finished in 2090.15ms 304 application/javascript
+2018-09-22 12:57:41.693 +08:00 [Information] Request finished in 2046.8078ms 200 text/css
+2018-09-22 12:57:42.691 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css.map  
+2018-09-22 12:57:42.876 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js.map  
+2018-09-22 12:57:42.948 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.min.css.map" was not modified
+2018-09-22 12:57:43.063 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.min.js.map" was not modified
+2018-09-22 12:57:43.387 +08:00 [Information] Request finished in 948.2281ms 304 text/plain
+2018-09-22 12:57:43.655 +08:00 [Information] Request finished in 498.0542ms 304 text/plain
+2018-09-22 14:22:06.154 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:22:06.315 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:22:06.472 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:22:06.891 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:22:21.646 +08:00 [Information] Executed DbCommand ("193"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-22 14:22:22.815 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-22 14:22:22.815 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 14:22:23.082 +08:00 [Information] Request finished in 275.7773ms 200 
+2018-09-22 14:22:23.858 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 14:22:23.920 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:22:24.324 +08:00 [Information] Executed DbCommand ("92"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 14:22:44.716 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 14:22:47.814 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 14:22:47.894 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 23316.2318ms
+2018-09-22 14:22:48.154 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0  
+2018-09-22 14:22:48.190 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 14:22:48.236 +08:00 [Information] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\font-awesome\css\font-awesome.min.css"'
+2018-09-22 14:22:48.394 +08:00 [Information] Sending file. Request path: '"/vendor/jquery/jquery.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\jquery\jquery.min.js"'
+2018-09-22 14:22:48.400 +08:00 [Information] Request finished in 25461.1764ms 200 text/html; charset=utf-8
+2018-09-22 14:22:48.400 +08:00 [Information] Sending file. Request path: '"/dist/css/site.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\dist\css\site.min.css"'
+2018-09-22 14:22:48.418 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/robots.txt  
+2018-09-22 14:22:48.741 +08:00 [Information] Request finished in 1182.9159ms 200 text/css
+2018-09-22 14:22:48.870 +08:00 [Information] Request finished in 61.8911ms 404 
+2018-09-22 14:22:48.971 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 14:22:49.019 +08:00 [Information] Request finished in 629.6145ms 200 text/css
+2018-09-22 14:22:49.081 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 14:22:49.217 +08:00 [Information] Request finished in 1078.5436ms 200 application/javascript
+2018-09-22 14:22:49.374 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.min.css"'
+2018-09-22 14:22:49.391 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.min.js"'
+2018-09-22 14:22:49.418 +08:00 [Information] Request finished in 529.3743ms 200 application/javascript
+2018-09-22 14:22:49.504 +08:00 [Information] Request finished in 827.8159ms 200 text/css
+2018-09-22 14:23:55.998 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 14:23:56.010 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0  
+2018-09-22 14:23:56.024 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 14:23:56.034 +08:00 [Information] The file "/vendor/font-awesome/css/font-awesome.min.css" was not modified
+2018-09-22 14:23:56.056 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 14:23:56.168 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.min.css" was not modified
+2018-09-22 14:23:56.215 +08:00 [Information] Request finished in 141.9978ms 304 text/css
+2018-09-22 14:23:56.267 +08:00 [Information] Request finished in 141.9925ms 304 text/css
+2018-09-22 14:23:56.389 +08:00 [Information] Request finished in 259.881ms 304 text/css
+2018-09-22 14:23:56.500 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js.map  
+2018-09-22 14:23:56.519 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css.map  
+2018-09-22 14:23:56.579 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.min.js.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.min.js.map"'
+2018-09-22 14:23:56.603 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.min.css.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.min.css.map"'
+2018-09-22 14:23:56.868 +08:00 [Information] Request finished in 331.3679ms 200 text/plain
+2018-09-22 14:23:57.567 +08:00 [Information] Request finished in 1098.9323ms 200 text/plain
+2018-09-22 14:23:58.355 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/Item/Edit/1  
+2018-09-22 14:23:58.434 +08:00 [Information] Request finished in 4.3019ms 404 
+2018-09-22 14:36:19.873 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:36:19.987 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:36:20.011 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:36:20.559 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:36:35.200 +08:00 [Information] Executed DbCommand ("527"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-22 14:36:39.485 +08:00 [Warning] Heartbeat took longer than "00:00:01" at "09/22/2018 06:36:38 +00:00".
+2018-09-22 14:36:40.553 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 14:36:42.497 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-22 14:36:43.728 +08:00 [Information] Request finished in 3968.5159ms 200 
+2018-09-22 14:36:46.266 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 14:36:46.299 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:36:46.688 +08:00 [Information] Executed DbCommand ("58"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 14:37:03.903 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 14:37:05.996 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 20571.1723ms
+2018-09-22 14:37:06.570 +08:00 [Information] Request finished in 26515.8552ms 200 text/html; charset=utf-8
+2018-09-22 14:37:06.716 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0  
+2018-09-22 14:37:06.828 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 14:37:06.887 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/robots.txt  
+2018-09-22 14:37:06.925 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 14:37:06.992 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.min.css"'
+2018-09-22 14:37:07.057 +08:00 [Information] Request finished in 199.7101ms 404 
+2018-09-22 14:37:07.300 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.min.js"'
+2018-09-22 14:37:07.449 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 14:37:07.543 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 14:37:07.750 +08:00 [Information] Sending file. Request path: '"/vendor/jquery/jquery.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\jquery\jquery.min.js"'
+2018-09-22 14:37:07.924 +08:00 [Information] Request finished in 855.1507ms 200 application/javascript
+2018-09-22 14:37:08.066 +08:00 [Information] Sending file. Request path: '"/dist/css/site.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\dist\css\site.min.css"'
+2018-09-22 14:37:08.246 +08:00 [Information] Request finished in 1320.2797ms 200 text/css
+2018-09-22 14:37:08.437 +08:00 [Information] Request finished in 1008.0212ms 200 application/javascript
+2018-09-22 14:37:08.686 +08:00 [Information] Request finished in 1506.4772ms 200 text/css
+2018-09-22 14:37:08.703 +08:00 [Information] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\font-awesome\css\font-awesome.min.css"'
+2018-09-22 14:37:08.913 +08:00 [Information] Request finished in 2545.9773ms 200 text/css
+2018-09-22 14:37:09.806 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2018-09-22 14:37:10.324 +08:00 [Information] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"'
+2018-09-22 14:37:11.487 +08:00 [Information] Request finished in 1911.9583ms 200 font/woff2
+2018-09-22 14:37:22.313 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0  
+2018-09-22 14:37:22.314 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 14:37:22.532 +08:00 [Information] The file "/vendor/font-awesome/css/font-awesome.min.css" was not modified
+2018-09-22 14:37:22.577 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 14:37:22.825 +08:00 [Information] Request finished in 362.6789ms 304 text/css
+2018-09-22 14:37:22.856 +08:00 [Information] Request finished in 371.0914ms 304 text/css
+2018-09-22 14:37:22.859 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js.map  
+2018-09-22 14:37:22.861 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 14:37:22.875 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.min.js.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.min.js.map"'
+2018-09-22 14:37:22.877 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.min.css" was not modified
+2018-09-22 14:37:22.951 +08:00 [Information] Request finished in 642.0502ms 304 text/css
+2018-09-22 14:37:22.973 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css.map  
+2018-09-22 14:37:22.984 +08:00 [Information] Request finished in 203.8091ms 200 text/plain
+2018-09-22 14:37:22.989 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.min.css.map"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.min.css.map"'
+2018-09-22 14:37:23.128 +08:00 [Information] Request finished in 161.6ms 200 text/plain
+2018-09-22 14:37:24.516 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/Item/Edit/1  
+2018-09-22 14:37:24.558 +08:00 [Information] Request finished in 5.7895ms 404 
+2018-09-22 14:38:54.048 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:38:54.132 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:38:54.141 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:38:54.417 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:39:02.338 +08:00 [Information] Executed DbCommand ("581"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-22 14:39:03.439 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-22 14:39:03.439 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 14:39:03.792 +08:00 [Information] Request finished in 313.1243ms 200 
+2018-09-22 14:39:04.863 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 14:39:04.898 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:39:05.737 +08:00 [Information] Executed DbCommand ("401"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 14:39:22.351 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 14:39:23.795 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 19075.4659ms
+2018-09-22 14:39:23.886 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css  
+2018-09-22 14:39:24.001 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 14:39:24.033 +08:00 [Information] Request finished in 20422.25ms 200 text/html; charset=utf-8
+2018-09-22 14:39:24.082 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 14:39:24.094 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.min.css"'
+2018-09-22 14:39:24.094 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 14:39:24.102 +08:00 [Information] Sending file. Request path: '"/dist/css/site.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\dist\css\site.min.css"'
+2018-09-22 14:39:24.106 +08:00 [Information] Sending file. Request path: '"/vendor/jquery/jquery.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\jquery\jquery.min.js"'
+2018-09-22 14:39:24.108 +08:00 [Information] Request finished in 111.1243ms 404 
+2018-09-22 14:39:24.113 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 14:39:24.132 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.min.js"'
+2018-09-22 14:39:24.179 +08:00 [Information] Request finished in 378.2233ms 200 text/css
+2018-09-22 14:39:24.188 +08:00 [Information] Request finished in 64.6619ms 200 application/javascript
+2018-09-22 14:39:24.306 +08:00 [Information] Request finished in 141.313ms 200 application/javascript
+2018-09-22 14:39:24.314 +08:00 [Information] Request finished in 501.2769ms 200 text/css
+2018-09-22 14:40:15.953 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 14:40:15.996 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 14:40:15.999 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:40:16.034 +08:00 [Information] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 14:40:16.328 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 371.0156ms
+2018-09-22 14:40:16.384 +08:00 [Error] An unhandled exception has occurred while executing the request
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(51,114): Error RZ9999: End of file or an unexpected character was reached before the "i" tag could be parsed.  Elements inside markup blocks must be complete. They must either be self-closing ("<br />") or have matching end tags ("<p>Hello</p>").  If you intended to display a "<" character, use the "&lt;" HTML entity.
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(43,7): Error RZ9999: The "tr" element was not closed.  All elements must be either self-closing or have a matching end tag.
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(41,6): Error RZ9999: The foreach block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\Views\Home\Index.cshtml(51,9): Error RZ9999: Found a malformed 'a' tag helper. Tag helpers must have a start and end tag or be self closing.
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CreateCacheEntry(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-09-22 14:40:16.586 +08:00 [Information] Request finished in 552.2245ms 500 text/html; charset=utf-8
+2018-09-22 14:40:38.057 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 14:40:38.092 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 14:40:38.095 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:40:38.123 +08:00 [Information] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 14:40:38.393 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 14:40:38.423 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 360.6628ms
+2018-09-22 14:40:38.458 +08:00 [Information] Request finished in 375.4343ms 200 text/html; charset=utf-8
+2018-09-22 14:40:38.584 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css  
+2018-09-22 14:40:38.626 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 14:40:38.661 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 14:40:38.665 +08:00 [Information] The file "/vendor/jquery/jquery.min.js" was not modified
+2018-09-22 14:40:38.669 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.min.js" was not modified
+2018-09-22 14:40:38.673 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 14:40:38.681 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 14:40:38.735 +08:00 [Information] Request finished in 97.8049ms 304 application/javascript
+2018-09-22 14:40:38.744 +08:00 [Information] Request finished in 97.8068ms 304 application/javascript
+2018-09-22 14:40:38.748 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 14:40:38.750 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.min.css" was not modified
+2018-09-22 14:40:38.763 +08:00 [Information] Request finished in 173.1787ms 304 text/css
+2018-09-22 14:40:38.780 +08:00 [Information] Request finished in 175.3311ms 304 text/css
+2018-09-22 14:40:38.805 +08:00 [Information] Request finished in 25.3655ms 404 
+2018-09-22 14:41:33.878 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"PurchaseItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:41:34.144 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SellItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:41:34.357 +08:00 [Warning] No type was specified for the decimal column '"Price"' on entity type '"SoldItem"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'ForHasColumnType()'.
+2018-09-22 14:41:34.878 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:41:45.140 +08:00 [Information] Executed DbCommand ("468"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Items] AS [i])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-09-22 14:41:47.725 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 14:41:47.725 +08:00 [Information] Request starting HTTP/1.1 DEBUG http://localhost:6696/  0
+2018-09-22 14:41:47.995 +08:00 [Information] Request finished in 231.9527ms 200 
+2018-09-22 14:41:49.133 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 14:41:49.188 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:41:49.646 +08:00 [Information] Executed DbCommand ("171"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 14:42:09.664 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 14:42:11.859 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0  
+2018-09-22 14:42:11.877 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 14:42:11.886 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 14:42:11.890 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 23001.5739ms
+2018-09-22 14:42:11.957 +08:00 [Information] Request finished in 24234.5381ms 200 text/html; charset=utf-8
+2018-09-22 14:42:12.046 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 14:42:12.052 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 14:42:12.079 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/js/bootstrap.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\js\bootstrap.min.js"'
+2018-09-22 14:42:12.130 +08:00 [Information] Sending file. Request path: '"/vendor/jquery/jquery.min.js"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\jquery\jquery.min.js"'
+2018-09-22 14:42:12.180 +08:00 [Information] Sending file. Request path: '"/dist/css/site.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\dist\css\site.min.css"'
+2018-09-22 14:42:12.187 +08:00 [Information] Sending file. Request path: '"/vendor/bootstrap/css/bootstrap.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\bootstrap\css\bootstrap.min.css"'
+2018-09-22 14:42:12.249 +08:00 [Information] Sending file. Request path: '"/vendor/font-awesome/css/font-awesome.min.css"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\font-awesome\css\font-awesome.min.css"'
+2018-09-22 14:42:12.485 +08:00 [Information] Request finished in 455.1442ms 200 text/css
+2018-09-22 14:42:12.664 +08:00 [Information] Request finished in 354.183ms 200 application/javascript
+2018-09-22 14:42:12.887 +08:00 [Information] Request finished in 518.678ms 200 application/javascript
+2018-09-22 14:42:13.188 +08:00 [Information] Request finished in 898.6161ms 200 text/css
+2018-09-22 14:42:13.310 +08:00 [Information] Request finished in 620.2674ms 200 text/css
+2018-09-22 14:42:13.313 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2018-09-22 14:42:13.320 +08:00 [Information] Sending file. Request path: '"/vendor/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"C:\Users\deddy\Source\Repos\eKedaiRuncit\eKedaiRuncit\KedaiRuncitWeb\KedaiRuncitWeb\wwwroot\vendor\font-awesome\fonts\fontawesome-webfont.woff2"'
+2018-09-22 14:42:13.349 +08:00 [Information] Request finished in 134.1069ms 200 font/woff2
+2018-09-22 14:43:17.890 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 14:43:17.922 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 14:43:17.924 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:43:17.966 +08:00 [Information] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 14:43:18.312 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 14:43:18.349 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 442.8632ms
+2018-09-22 14:43:18.417 +08:00 [Information] Request finished in 461.6265ms 200 text/html; charset=utf-8
+2018-09-22 14:43:18.467 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 14:43:18.487 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 14:43:18.500 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 14:43:18.517 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 14:43:18.534 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.min.js" was not modified
+2018-09-22 14:43:18.564 +08:00 [Information] The file "/vendor/jquery/jquery.min.js" was not modified
+2018-09-22 14:43:18.578 +08:00 [Information] Request finished in 78.061ms 304 application/javascript
+2018-09-22 14:43:18.580 +08:00 [Information] Request finished in 101.5461ms 304 text/css
+2018-09-22 14:43:18.587 +08:00 [Information] Request finished in 129.1035ms 304 application/javascript
+2018-09-22 14:43:18.590 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0  
+2018-09-22 14:43:18.594 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 14:43:18.596 +08:00 [Information] The file "/vendor/font-awesome/css/font-awesome.min.css" was not modified
+2018-09-22 14:43:18.609 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.min.css" was not modified
+2018-09-22 14:43:18.617 +08:00 [Information] Request finished in 138.3468ms 304 text/css
+2018-09-22 14:43:18.751 +08:00 [Information] Request finished in 175.7802ms 304 text/css
+2018-09-22 14:43:18.754 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2018-09-22 14:43:18.765 +08:00 [Information] The file "/vendor/font-awesome/fonts/fontawesome-webfont.woff2" was not modified
+2018-09-22 14:43:18.784 +08:00 [Information] Request finished in 15.3289ms 304 font/woff2
+2018-09-22 14:44:07.109 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/  
+2018-09-22 14:44:07.138 +08:00 [Information] Executing action method "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" with arguments (null) - ModelState is Valid
+2018-09-22 14:44:07.141 +08:00 [Information] Entity Framework Core "2.1.3-rtm-32065" initialized '"RuncitContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-09-22 14:44:07.183 +08:00 [Information] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [i].[Id], [i].[Description], [i].[Name]
+FROM [Items] AS [i]"
+2018-09-22 14:44:07.461 +08:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-09-22 14:44:07.522 +08:00 [Information] Executed action "KedaiRuncitWeb.Controllers.HomeController.Index (KedaiRuncitWeb)" in 373.5357ms
+2018-09-22 14:44:07.657 +08:00 [Information] Request finished in 417.3715ms 200 text/html; charset=utf-8
+2018-09-22 14:44:07.700 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/css/bootstrap.min.css?v=eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE  
+2018-09-22 14:44:07.737 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/bootstrap/js/bootstrap.min.js  
+2018-09-22 14:44:07.737 +08:00 [Information] The file "/vendor/bootstrap/css/bootstrap.min.css" was not modified
+2018-09-22 14:44:07.764 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/css/font-awesome.min.css?v=eZrrJcwDc_3uDhsdt61sL2oOBY362qM3lon1gyExkL0  
+2018-09-22 14:44:07.769 +08:00 [Information] The file "/vendor/bootstrap/js/bootstrap.min.js" was not modified
+2018-09-22 14:44:07.780 +08:00 [Information] Request finished in 187.616ms 304 text/css
+2018-09-22 14:44:07.783 +08:00 [Information] Request finished in 116.3241ms 304 application/javascript
+2018-09-22 14:44:07.790 +08:00 [Information] The file "/vendor/font-awesome/css/font-awesome.min.css" was not modified
+2018-09-22 14:44:07.801 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/dist/css/site.min.css?v=tUT6neEpc48Txy9T-6BQof1CWeg4gNdEhsMnEz2cfbE  
+2018-09-22 14:44:07.804 +08:00 [Information] Request finished in 242.1044ms 304 text/css
+2018-09-22 14:44:07.810 +08:00 [Information] The file "/dist/css/site.min.css" was not modified
+2018-09-22 14:44:07.816 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/jquery/jquery.min.js  
+2018-09-22 14:44:07.823 +08:00 [Information] Request finished in 27.1695ms 304 text/css
+2018-09-22 14:44:07.825 +08:00 [Information] The file "/vendor/jquery/jquery.min.js" was not modified
+2018-09-22 14:44:07.838 +08:00 [Information] Request finished in 167.6357ms 304 application/javascript
+2018-09-22 14:44:07.964 +08:00 [Information] Request starting HTTP/1.1 GET http://localhost:6696/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0  
+2018-09-22 14:44:07.967 +08:00 [Information] The file "/vendor/font-awesome/fonts/fontawesome-webfont.woff2" was not modified
+2018-09-22 14:44:07.981 +08:00 [Information] Request finished in 13.5823ms 304 font/woff2

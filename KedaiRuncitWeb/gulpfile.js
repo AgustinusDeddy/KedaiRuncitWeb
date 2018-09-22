@@ -51,6 +51,9 @@ var deps = {
 	},
 	"bootstrap": {
 		"dist/**/*": ""
+	},
+	"font-awesome": {
+		"/**/*": ""
 	}
 };
 
@@ -69,6 +72,7 @@ gulp.task("scripts", function () {
 	for (var prop in deps) {
 		console.log("Prepping Scripts for: " + prop);
 		for (var itemProp in deps[prop]) {
+			console.log("Copy: " + itemProp + " to : " + deps[prop][itemProp]);
 			streams.push(gulp.src("node_modules/" + prop + "/" + itemProp)
 				.pipe(gulp.dest("wwwroot/vendor/" + prop + "/" + deps[prop][itemProp])));
 		}

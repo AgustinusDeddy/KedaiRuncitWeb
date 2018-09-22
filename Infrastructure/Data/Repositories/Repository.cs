@@ -22,15 +22,15 @@ namespace Infrastructure.Data.Repositories
 
         public T GetSingleBySpec(ISpecification<T> spec)
         {
-            return List(spec).FirstOrDefault();
+            return Get(spec).FirstOrDefault();
         }
 
-        public IEnumerable<T> ListAll()
+        public IEnumerable<T> GetAll()
         {
             return _dbContext.Set<T>().AsEnumerable();
         }
 
-        public IEnumerable<T> List(ISpecification<T> spec)
+        public IEnumerable<T> Get(ISpecification<T> spec)
         {
             // fetch a Queryable that includes all expression-based includes
             var queryableResultWithIncludes = spec.Includes
