@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using KedaiRuncitWeb.Interfaces;
-using KedaiRuncitWeb.ViewModels;
+﻿using KedaiRuncitWeb.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -19,6 +17,8 @@ namespace KedaiRuncitWeb.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogTrace("Getting all items");
+
             var items = _itemViewModelService.GetItems();
             return View(items);
         }

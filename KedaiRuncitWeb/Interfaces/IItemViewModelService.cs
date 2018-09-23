@@ -7,5 +7,6 @@ namespace KedaiRuncitWeb.Interfaces
     public interface IItemViewModelService
     {
         IEnumerable<ItemViewModel> GetItems();
+        ItemViewModel GetItem(int id);
     }
 }

@@ -10,5 +10,7 @@ namespace Core.Entities
         [StringLength(200)]
         public string Description { get; set; }
 
+        public ItemInventory Inventory { get; set; }
+
     }
 }

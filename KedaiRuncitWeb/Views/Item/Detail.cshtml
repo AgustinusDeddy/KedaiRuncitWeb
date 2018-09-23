@@ -1,0 +1,14 @@
+﻿@model KedaiRuncitWeb.ViewModels.ItemViewModel
+
+@{
+	ViewData["Title"] = @Model.Name+ "'s Detail";
+}
+
+<div class="container">
+	<h2>@Model.Name's Detail</h2>
+	
+	@Model.Description
+	
+	Stock : @Model.Stock
+
+</div>

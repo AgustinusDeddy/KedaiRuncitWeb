@@ -6,6 +6,8 @@ namespace Core.Entities
     {
         [Range(1, int.MaxValue, ErrorMessage = "Only positive number allowed")]
         public int Stock { get; set; }
+
+        public int ItemId { get; set; }
         public Item Item { get; set; }
     }
 }
