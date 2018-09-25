@@ -9,7 +9,7 @@ namespace Core.Entities.SellAggregate
         public int ItemId { get; private set; }
         //store price incase the selling price change
         [Range(0.0, Double.MaxValue, ErrorMessage = "Only positive number allowed")]
-        public decimal Price { get; private set; }
+        public double Price { get; private set; }
         [Range(1, int.MaxValue, ErrorMessage = "Only positive number allowed")]
         public int Quantity { get; private set; }
 
@@ -20,7 +20,7 @@ namespace Core.Entities.SellAggregate
         {
         }
 
-        public SoldItem(int itemId, decimal price, int quantity)
+        public SoldItem(int itemId, double price, int quantity)
         {
             ItemId = itemId;
             Price = price;

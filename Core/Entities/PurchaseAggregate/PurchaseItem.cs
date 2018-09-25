@@ -8,7 +8,7 @@ namespace Core.Entities.PurchaseAggregate
         [Required]
         public int ItemId { get; private set; }
         [Range(0.0, Double.MaxValue, ErrorMessage = "Price must be positive number")]
-        public decimal Price { get; private set; }
+        public double Price { get; private set; }
         [Range(1, int.MaxValue, ErrorMessage = "Only positive number allowed")]
         public int Quantity { get; private set; }     
 
@@ -19,7 +19,7 @@ namespace Core.Entities.PurchaseAggregate
         {        
         }
 
-        public PurchaseItem(int itemId, decimal price, int quantity)
+        public PurchaseItem(int itemId, double price, int quantity)
         {
             ItemId = itemId;
             Price = price;

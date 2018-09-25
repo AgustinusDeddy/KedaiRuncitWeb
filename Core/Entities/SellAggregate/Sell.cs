@@ -10,11 +10,16 @@ namespace Core.Entities.SellAggregate
         {
         }
 
-        public DateTimeOffset SoldTime { get; set; }
-        public decimal TotalAmount => CalculateTotal();
-        public ICollection<SoldItem> SoldItems { get; set; }
+        public Sell(List<SoldItem> items)
+        {
+            SoldItems = items;     
+        }
 
-        private decimal CalculateTotal()
+        public DateTimeOffset SoldTime { get; set; }
+        public double TotalAmount => CalculateTotal();
+        public ICollection<SoldItem> SoldItems { get; private set; }
+
+        public double CalculateTotal()
         {
             return SoldItems.Sum(i => i.Price * i.Quantity);
         }
