@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Ardalis.GuardClauses;
 
 namespace Core.Entities.SellAggregate
 {
@@ -22,6 +23,11 @@ namespace Core.Entities.SellAggregate
 
         public SoldItem(int itemId, double price, int quantity)
         {
+            if (price < 0)
+                throw new ArgumentOutOfRangeException();
+
+            Guard.Against.OutOfRange(quantity, nameof(quantity), 0, int.MaxValue);
+
             ItemId = itemId;
             Price = price;
             Quantity = quantity;

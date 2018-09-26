@@ -32,9 +32,9 @@ namespace KedaiRuncitWeb
         {
             services.AddDbContext<RuncitContext>(options => options.UseSqlServer(_configuration.GetConnectionString("RuncitConnection")));
 
-            services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
-
             services.AddAutoMapper();
+
+            services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
 
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
@@ -53,6 +53,7 @@ namespace KedaiRuncitWeb
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
             }
             else
             {
