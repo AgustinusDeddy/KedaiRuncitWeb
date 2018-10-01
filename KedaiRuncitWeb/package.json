@@ -16,5 +16,8 @@
 		"merge-stream": "^1.0.1",
 		"popper.js": "^1.14.0",
 		"del": "3.0.0"
+	},
+	"scripts": {
+		"gulp": "gulp"
 	}
 }

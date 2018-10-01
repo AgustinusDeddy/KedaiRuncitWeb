@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{3FBC5BDC-5292-4B73-92C0-50F14DAB853F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KedaiRuncitWeb.UnitTests", "KedaiRuncitWeb.UnitTests\KedaiRuncitWeb.UnitTests.csproj", "{CB5F4E22-1C14-4B4B-94CB-2CC9244BE6DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KedaiRuncitWeb.UnitTests", "KedaiRuncitWeb.UnitTests\KedaiRuncitWeb.UnitTests.csproj", "{CB5F4E22-1C14-4B4B-94CB-2CC9244BE6DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDAD685E-958D-441D-9C56-E1DABAE0B718}"
+	ProjectSection(SolutionItems) = preProject
+		build.cake = build.cake
+		build.ps1 = build.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
