@@ -1,4 +1,4 @@
-﻿/// <binding BeforeBuild='clean' AfterBuild='default' />
+﻿/// <binding AfterBuild='default' />
 /*
 This file is the main entry point for defining Gulp tasks and using Gulp plugins.
 Click here to learn more. https://go.microsoft.com/fwlink/?LinkId=518007
@@ -13,6 +13,10 @@ var merge = require('merge-stream');
 
 gulp.task("pack-css", function () {
 
+	del([
+		'wwwroot/dist/css/*'
+	]);
+
 	var streams = [
 		gulp.src(["wwwroot/site/css/*.css"])
 			.pipe(cssmin())
@@ -24,6 +28,10 @@ gulp.task("pack-css", function () {
 });
 
 gulp.task("pack-js", function () {
+
+	del([
+		'wwwroot/dist/js/*'
+	]);
 
 	var streams = [
 		gulp.src(["wwwroot/site/js/*.js"])
@@ -57,15 +65,21 @@ var deps = {
 	}
 };
 
-gulp.task('clean', function () {
+gulp.task('cleanVendor', function () {
 	return del([
 		// here we use a globbing pattern to match everything inside the `mobile` folder
-		'wwwroot/vendor/**/*',
-		'wwwroot/dist/**/*'
+		'wwwroot/vendor/*'
+		//'wwwroot/dist/*'
 	]);
 });
 
-gulp.task("scripts", function () {
+gulp.task("scripts", ['cleanVendor'], function () {
+
+	del([
+		// here we use a globbing pattern to match everything inside the `mobile` folder
+		'wwwroot/vendor/*'
+		//'wwwroot/dist/*'
+	]);
 
 	var streams = [];
 
@@ -73,8 +87,8 @@ gulp.task("scripts", function () {
 		console.log("Prepping Scripts for: " + prop);
 		for (var itemProp in deps[prop]) {
 			console.log("Copy: " + itemProp + " to : " + deps[prop][itemProp]);
-			streams.push(gulp.src("node_modules/" + prop + "/" + itemProp)
-				.pipe(gulp.dest("wwwroot/vendor/" + prop + "/" + deps[prop][itemProp])));
+			streams.push(gulp.src("./node_modules/" + prop + "/" + itemProp)
+				.pipe(gulp.dest("./wwwroot/vendor/" + prop + "/" + deps[prop][itemProp])));
 		}
 	}
 
@@ -82,4 +96,4 @@ gulp.task("scripts", function () {
 
 });
 
-gulp.task("default", ['clean', 'pack-css', 'pack-js', 'scripts'], function () { });
+gulp.task("default", ['pack-css', 'pack-js', 'scripts'], function () { });
