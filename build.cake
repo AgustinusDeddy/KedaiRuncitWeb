@@ -109,8 +109,8 @@ Task("Default")
 	.IsDependentOn("Clean")
     .IsDependentOn("Restore")
     .IsDependentOn("Build")
-	.IsDependentOn("Test");
-    //.IsDependentOn("Publish");
+	.IsDependentOn("Test")
+    .IsDependentOn("Publish");
 
  Task("Rebuild")
 	.IsDependentOn("Clean")
