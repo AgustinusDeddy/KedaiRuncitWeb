@@ -28,8 +28,4 @@ jobs:
             apt-get -qq -y install mono-complete
       - run:
           name: Build
-          command: ./build.sh --pack
-      - store_artifacts:
-          name: Uploading NuGet packages as artifacts
-          path: artifacts/packages
-          destination: packages
+          command: ./build.sh --Default
