@@ -5,16 +5,6 @@ Search or jump to…
 Pull requests
 Issues
 Marketplace
-Explore
- @AgustinusDeddy Sign out
-1
-0 2 gabrielweyer/cake-build
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-cake-build/.circleci/config.yml
-fbfcb36  on Feb 10
-@gabrielweyer gabrielweyer Update .NET Core version
-     
-46 lines (46 sloc)  1.99 KB
 version: 2
 jobs:
   build:
