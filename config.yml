@@ -1,8 +1,52 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @AgustinusDeddy Sign out
+1
+0 2 gabrielweyer/cake-build
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
+cake-build/.circleci/config.yml
+fbfcb36  on Feb 10
+@gabrielweyer gabrielweyer Update .NET Core version
+     
+46 lines (46 sloc)  1.99 KB
 version: 2
 jobs:
   build:
-    docker: # use the docker executor type; machine and macos executors are also supported
-      - image: microsoft/dotnet:2.0.5-sdk-2.1.4-jessie # the primary container, where your job's commands are run
+    docker:
+      - image: microsoft/dotnet:2.0.5-sdk-2.1.4-jessie
     steps:
-      - checkout # check out the code in the project directory
-      - run: echo "hello world" # run the `echo` command
+      - checkout
+      - run:
+          name: Make scripts executable
+          command: |
+            chmod +x build/dotnet-install.sh
+            chmod +x ./build.sh
+      - run:
+          name: Install .NET Core 1.0.9 runtime
+          command: |
+            # `dotnet-install.sh` is available at: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script
+            # `Cake.dll` is targeting `.NET Core` `1.0.9`, so we need to install the latest `1.0.x` runtime
+            # The runtime is required to run a `.NET Core` application, it's part of the `SDK`
+            # https://github.com/dotnet/core/blob/master/release-notes/download-archive.md
+            echo 'export DOTNET_RUNTIME_INSTALL_DIR="$PWD/.dotnetcli"' >> $BASH_ENV
+            build/dotnet-install.sh --shared-runtime --version 1.0.9 --install-dir "$PWD/.dotnetcli"
+      - run:
+          name: Install Mono
+          command: |
+            apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+            echo "deb http://download.mono-project.com/repo/debian jessie main" | tee /etc/apt/sources.list.d/mono-official.list
+            apt-get update
+            apt-get -qq -y install mono-complete
+      - run:
+          name: Build
+          command: ./build.sh --pack
+      - store_artifacts:
+          name: Uploading NuGet packages as artifacts
+          path: artifacts/packages
+          destination: packages
